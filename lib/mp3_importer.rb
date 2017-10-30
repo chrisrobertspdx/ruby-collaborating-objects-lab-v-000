@@ -5,6 +5,7 @@ class MP3Importer
   end
   def files
     Dir[path+"/**/*.mp3"].collect{|e| e.split("/").last}
+    binding.pry
   end
   def import
     #binding.pry
