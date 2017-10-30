@@ -8,7 +8,7 @@ class MP3Importer
   end
   def import
     Artist.clear_list
-    binding.pry
+    #binding.pry
     self.files.each{|e|
       Song.new_by_filename(e)
     }
