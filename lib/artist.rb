@@ -26,7 +26,7 @@ class Artist
   def save
     @@artists << self
   end
-  def self.clear
+  def self.clear_list
     @@artists.clear
   end
   def print_songs
