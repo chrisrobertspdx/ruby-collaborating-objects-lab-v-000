@@ -26,6 +26,9 @@ class Artist
   def save
     @@artists << self
   end
+  def self.clear
+    @@artists.clear
+  end
   def print_songs
     @songs.each{|e|
       puts e.name
