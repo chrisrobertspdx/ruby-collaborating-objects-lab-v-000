@@ -7,6 +7,7 @@ class MP3Importer
     Dir[path+"/**/*.mp3"].collect{|e| e.split("/").last}
   end
   def import
+    binding.pry
     self.files.each{|e|
       Song.new_by_filename(e)
     }
