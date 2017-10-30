@@ -26,7 +26,7 @@ class Song
 
     self.artist = Artist.find_or_create_by_name(name)
     self.artist.add_song(self)
-    #self.save
+    self.artist.save
 
 
 
