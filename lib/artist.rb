@@ -15,7 +15,9 @@ class Artist
     if artist.size > 0
       artist[0]
     else
-      Artist.new(name)
+      instance = Artist.new(name)
+      instance.save
+      instance
     end
   end
   def self.all
